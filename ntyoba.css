@@ -171,6 +171,8 @@ footer {
     height: 30px;
     margin: 0 8px;
     transition: transform 0.3s;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .social-icon:hover {
