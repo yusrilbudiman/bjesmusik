@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-jes Musik</title>
+    <link rel="icon" href="logo bjes.png" type="image/x-icon">
+    <script src="ntyoba.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="ntyoba.css">
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title-img">
+        <div class="title-main">
+            <h1>B-Jes Musik</h1>
+            <p>Layanan Musik Pernikahan Batak, Birthday, Pertemuan, dan Kedukaan</p> 
+        </div>  
+    </div>
+    
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="Gambar 1">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="Gambar 2">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="Gambar 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="product-details">
+        <h2>Merchandise</h2>
+        <img src="kaos.jpg" alt="Gambar Produk" class="product-image">
+        <p class="harga">Harga: Rp 200.000</p>
+        <p class="description">Temukan gaya santai yang sempurna dengan Baju Casual Stylish kami! Dirancang khusus untuk memberikan kenyamanan dan kepercayaan diri.</p>
+        <button onclick="scrollToCheckout()" class="btn-beli">Beli Sekarang</button>
+    </section>
+
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form onsubmit="lanjutkanPembayaran(event);">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required>
+
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" name="alamat" required></textarea>
+
+            <!-- Pilihan Metode Pembayaran -->
+            <label for="metode-pembayaran">Pilih Metode Pembayaran:</label>
+            <select id="metode-pembayaran" name="metode-pembayaran" required>
+                <option value="cod">Cash on Delivery (COD)</option>
+                <option value="transfer">Transfer Bank</option>
+            </select>
+
+            <button type="submit" class="btn-beli">Lanjutkan Pembayaran</button>
+        </form>
+    </section>
+
+        <footer>
+            <p class="sosmed">Terima kasih atas kunjungan Anda!</p>
+            <p class="sosmed">Jangan Lupa Follow Social Media Kami</p>
+            <div class="social-media">
+                <a href="https://www.youtube.com/@b-jesmusik" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/bjesmusik/" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@bjesmusik" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/bjesmusik" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" class="social-icon">
+                </a>
+            </div>
+        </footer>
+        
+    </body>
+    </html>

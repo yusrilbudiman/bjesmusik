@@ -1,0 +1,217 @@
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #363636;
+}
+
+/* Gaya untuk title-main */
+.title-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+    padding: 5vw 2vw;
+}
+
+.title-main h1 {
+    font-size: 6vw;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.title-main p {
+    font-size: 2vw;
+    color: #ffffffc0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#product-details, #checkout {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+    padding: 5vw;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#product-details:hover, #checkout:hover {
+    transform: translateY(-10px);
+}
+
+#product-details h2, #checkout h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.product-image, .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover, .carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+#carouselExample {
+    max-width: 90%;
+    margin: auto;
+}
+
+.harga {
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-beli, button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #9d2bc0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-beli:hover, button[type="submit"]:hover {
+    background-color: #2bc0c0;
+    transform: scale(1.05);
+}
+
+.btn-beli:active, button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+#checkout {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+    padding: 5vw;
+}
+
+#checkout h2 {
+    font-size: 2rem;
+    color: #e74c3c;
+    text-align: center;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #9d2bc0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2bc0c0;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .title-main h1 {
+        font-size: 7vw;
+    }
+    .title-main p {
+        font-size: 3vw;
+    }
+    .btn-beli, button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    .harga {
+        font-size: 1.3rem;
+    }
+    #carouselExample {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 380px) {
+    .title-main h1 {
+        font-size: 8vw;
+    }
+    .title-main p {
+        font-size: 3.5vw;
+    }
+    .btn-beli, button[type="submit"] {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+    .harga {
+        font-size: 1.2rem;
+    }
+    #carouselExample {
+        max-width: 100%;
+    }
+}
